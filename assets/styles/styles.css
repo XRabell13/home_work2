@@ -1,0 +1,271 @@
+/*GLOBAL*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER */
+.header{
+    display: flex;
+    max-width: 1365px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header a
+{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.img{
+    width: 200px;
+    height: 17px;
+}
+
+/*MAIN*/
+.main{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* DESC SHELF SECTION */
+.section_img {
+    position: relative; 
+}
+
+.text_on_picture {
+    position: absolute;
+    top:188px;
+    /*ALIGNMENT*/
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-size: 43px;
+    line-height: 46px;
+    text-align: center; 
+    color: #FFFFFF;
+}
+.text_on_picture span{
+    display: block;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+}
+.text_on_picture h2{
+    font-weight: normal;
+    font-size: 43px;
+    line-height: 46px;
+    margin-bottom: 12px;
+
+}
+.link{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* DESIGN INSPIRES SECTION */
+.section_design_ins{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ .section_design_ins>div{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+}
+.section_design_ins div h2{
+    font-weight: normal;
+    font-size: 43px;
+    line-height: 58px;
+    margin-bottom: 23px;
+ }
+.section_design_ins>div span{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+    margin-bottom: 26px;
+}
+.section_design_ins .link{
+    color: #000000;
+}
+
+.container-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.container-content>div{
+    flex-direction: row;
+    text-align: center;
+    margin: 12.5px;
+}
+.container-content>div span{
+    margin-top: 48px;
+    font-size: 27px;
+    line-height: 30px;
+    color: #000000;
+}
+.container-content .link 
+{
+    margin-top: 23px;
+}
+
+/*FEATURED PRODUCT SECTION*/
+.section_featured_prod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 130px;
+}
+.section_featured_prod>div{
+    text-align: center;
+   
+}
+.section_featured_prod div h2{
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 36px;
+   
+ }
+.section_featured_prod>div span{
+    display: block;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    margin-top: 16px;
+    color: #A0A0A0; 
+}
+
+/*SLIDER*/
+
+.slider {
+	position:relative;
+    width: 1365px;
+    height: 546px;
+	text-align:center;
+    margin-top: 52px;
+    margin-bottom: 95px;
+  
+}
+.slider__check {
+	position:absolute;
+	clip:rect(0 0 0 0);
+	overflow:hidden;
+}
+.slider__image {
+	position:absolute;
+	top:24px;
+	left: 11px;
+}
+.container_image{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 24px;
+}
+.container_image img{
+    width: auto;
+    height: 434px;
+    margin: 0px 12.5px;
+}
+.container_image div>div{
+    text-align: start;
+    margin-left: 13px;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.7px;
+    margin-top: 23px;
+    color: #A0A0A0;
+}
+.container_image div>div:last-child
+{
+    margin-top: 0;
+}
+.slider__label {
+	overflow:hidden;
+	display:inline-block;
+	width:7px;
+	height:7px;
+	background: #000;
+	margin: 0 8px;
+    padding: 0px;
+	text-indent:-9999px;
+}
+
+/* Display of the current element*/
+.slider__image {
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+}
+.slider__check:checked + .slider__label + .slider__image {
+    opacity:1;
+    transition: 1s;
+}
+
+/* Current button*/
+.slider__check:checked + .slider__label {
+	background: #A0A0A0;
+}
+/*HOME OFFICE INSPIRATION SECTION*/
+.text_on_picture span{
+    font-size: 14px;
+    line-height: 16px;
+}
+/* MADE THE HARD WAY */
+#madeHardWay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 116px;
+    margin-bottom: 38px;
+}
+#madeHardWay h2{
+    font-weight: normal;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 36px;
+}
+.bigText{
+    width: 777px;
+    height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+    margin: 23px 0px;
+}
