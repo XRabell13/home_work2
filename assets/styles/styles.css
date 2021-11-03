@@ -227,8 +227,8 @@ body{
 
 /* Display of the current element*/
 .slider__image {
-    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
-    transition: 1s; /*Скорость перехода состояния элемента*/
+    opacity:0;/*The element is completely transparent (invisible)*/
+    transition: 1s; /*Element state transition rate*/
 }
 .slider__check:checked + .slider__label + .slider__image {
     opacity:1;
@@ -269,3 +269,4 @@ body{
     color: #A0A0A0;
     margin: 23px 0px;
 }
+
