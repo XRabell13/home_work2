@@ -318,3 +318,31 @@ body{
 .invitation_section .link{
     color: #000000;
 }
+ /* SECTION ABOUT DESIGN INSPIRATION */
+ .gesign_inspiration_section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 1340px;
+    height: 404px;
+    margin-top: 124px;
+    margin-bottom: 39px;
+    margin-left: 50px;
+    background-color: #9AA8B1;
+ }
+ .gesign_inspiration_section>h2{
+    font-weight: normal;
+    font-size: 43px;
+    line-height: 58px;
+    margin-top: 23px;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+ }
+ .gesign_inspiration_section div{
+     color: #FFFFFF;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.8px;
+   
+ }
